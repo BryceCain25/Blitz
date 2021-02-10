@@ -1,0 +1,40 @@
+#include "config\CfgBlitz.h"
+#include "config\CfgFunctions.h"
+#include "config\CfgParams.h"
+author = "Midnight";
+onLoadName = "Blitz Compound";
+onLoadMission = "Blitz Compound";
+loadScreen = "";
+respawn = 3;
+respawnDelay = 2;
+respawnOnStart = 0;
+disabledAI = 1;
+respawnDialog = 1;
+saving = 0;
+briefingName = "BLITZ PVP";
+overviewPicture = "";
+overviewText = "BLITZ PVP";
+overviewTextLocked = "BLITZ PVP - LOCKED STATUS";
+allowFunctionsLog = 1;
+class Header {
+	gameType = TDM;
+	minPlayers = 1;
+	maxPlayers = 32;
+};
+disableChannels[]={
+	{0,false,false},
+	{1,true,true},
+	{2,true,true},
+	{3,true,true},
+	{4,true,true},
+	{5,true,true}
+};
+//GC
+corpseManagerMode = 1;
+corpseLimit = 2;
+corpseRemovalMinTime = 15;
+corpseRemovalMaxTime = 30;
+minPlayerDistance = 0;
+
+enableDebugConsole = 1;
+joinUnassigned = 0;
